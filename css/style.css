@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    padding: 20px;
+    outline: none;
+    background-color: rgba(107, 228, 249, 0.227);
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

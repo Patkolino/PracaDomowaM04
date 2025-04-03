@@ -1,0 +1,68 @@
+.section__header {
+    color: rgb(210, 17, 17);
+    margin-bottom: 10px;
+}
+
+.section__subHeader {
+    color: rgb(196, 27, 27);
+}
+
+.section__container {
+    margin: 10px 0 15px 0;
+}
+
+.section__paragraph {
+    margin-bottom: 10px;
+}
+
+.section__paragraph--wiggle {
+    margin: 0 0 5px 0;
+}
+
+.section__animalList {
+    padding: 0 0 0 30px;
+    margin: 5px 0 10px 0;
+}
+
+.section__list {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.section__image {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: fit-content;
+    border-radius: 15px;
+}
+
+.section__button {
+    font-family: inherit;
+}
+
+.section__paragraph--editable {
+    display: block;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    position: relative;
+    box-shadow: 0 0 10px 8px #FF9999;
+    margin: 20px 0 20px 0;
+}
+
+.section__paragraph--editable:focus {
+    background-color: rgb(246, 249, 249);
+    border-style: dashed;
+    outline: none;
+}
+
+.section__paragraph--editable:hover {
+    background-color: rgb(246, 249, 249);
+}
+
+.section__paragraph--media {
+    margin-bottom: 5px;
+}

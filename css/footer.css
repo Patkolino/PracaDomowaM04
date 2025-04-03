@@ -1,0 +1,28 @@
+.footer {
+    background-color: rgb(98, 201, 219);
+    padding: 20px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__paragraph {
+    margin: 0 0 10px 0;
+    padding: 5px;
+}
+
+.footer__linkContainer {
+    padding: 10px;
+}
+
+.footer__link {
+    color: rgb(2, 2, 224);
+}
+
+.footer__link:focus {
+    background-color: beige;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: rgb(219, 0, 0);
+}

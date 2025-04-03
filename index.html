@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/tableContainer.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>Moja pierwsza strona o zwierzętach</title>
+
+</head>
+
+<body class="body">
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#Moje-ulubione-zwierzęta">Moje ulubione zwierzęta</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#Koty">Koty</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#Psi">Psy</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#Kaczki">Kaczki</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#Kapibary">Kapibary</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#Tabela">Tabela</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">Witam na mojej pierwszej stronie o zwierzętach!</h1>
+    </header>
+
+    <main class="main">
+
+        <section class="section">
+            <h2 class="section__header" id="Moje-ulubione-zwierzęta">Moje ulubione zwierzęta:</h2>
+            <ul class="section__animalList">
+                <li>Koty</li>
+                <li>Psy</li>
+                <li>Kaczki</li>
+                <li>Kapibary</li>
+            </ul>
+        </section>
+
+        <section class="section" id="Koty">
+
+            <h3 class="section__subHeader">Zacznijmy od pierwszych, czyli kotów.</h3>
+
+            <p class="section__paragraph">Oto trzy ciekawe informacje o kotach:</p>
+
+            <ol class="section__list">
+                <li>Kot może skakać nawet do <b>5 razy wyżej</b> niż jego własny wzrost.</li>
+                <li>Koty mogą obracać uszy o <b>180 stopni</b>.</li>
+                <li>Wzór na nosie jest dla kota jak nasz odcisk palca - każdy z nich jest <b>unikalny</b>.</li>
+            </ol>
+
+            <div class="section__gallery js-catGallery">
+                <img class="section__image" width="300" src="https://images.unsplash.com/photo-1630743637039-c0af63039065?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dwa śpiące szare kotki">
+                <img class="section__image" width="650" src="https://images.unsplash.com/photo-1526674183561-4bfb419ab4e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gruby rudy kot leży i śpi na werandzie">
+            </div>
+
+            <button class="section__button js-removeCatGalleryButton">Usuń zdjęcia kotów</button>
+
+        </section>
+
+        <section class="section" id="Psi">
+
+            <h3 class="section__subHeader">Psy</h3>
+
+            <p class="section__paragraph">Trzy ciekawe infomacje o pieskach:</p>
+
+            <ol class="section__list">
+                <li><b>Psy wykrywają raka</b> - naukowcy potwierdzają, że psy potrafią wyczuwać różne rodzaje raka w ludzkim
+                    organizmie dzięki wyjątkowo czułemu węchowi.</li>
+                <li>Tak samo jak u kotów, wzór na nosie psa jest <b> unikalny</b>.</li>
+                <li>Psy również miewają <b>czkawkę</b>, jeśli jedzą lub piją zbyt szybko.</li>
+            </ol>
+
+            <p class="section__paragraph"> Moje ulubione rasy psów to bernejski pies pasterski i golden retriever. </p>
+
+            <div class="section__gallery js-dogGallery">
+                <img class="section__image" width="300" src="https://images.unsplash.com/photo-1645206972114-b86cffc7a2aa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bernejski pies">
+                <img class="section__image" width="600" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Golden retriever">
+            </div>
+
+            <button class="section__button js-removeDogGalleryButton">Usuń zdjęcia psów</button>
+
+            <p class="section__paragraph">Dodatkowo, też bardzo lubie corgi.</p>
+
+            <div class="section__gallery js-corgiGallery">
+                <img class="section__image" width="700" height="450" src="https://c.tenor.com/l1PNlVw2b34AAAAC/tenor.gif" alt="Corgi stoi w miejscu i rusza dupką">
+                <p class="section__paragraph section__paragraph--wiggle"><em> wiggle wiggle wiggle </em></p>
+            </div>
+
+            <button class="section__button js-removeCorgiGalleryButton">Usuń filmik</button>
+
+        </section>
+
+        <section class="section" id="Kaczki">
+
+            <h3 class="section__subHeader">Kaczki</h3>
+
+            <p class="section__paragraph">Czy wiedziałeś że:</p>
+
+            <ol class="section__list">
+                <li>Małe kaczki krzyżówki są w stanie samodzielnie latać już w <b>55 dniu życia</b>.</li>
+                <li>Najdłużej żyjąca krzyżówka, której wiek udało się potwierdzić naukowcom, dożyła <b>29 lat</b>.</li>
+                <li>Kaczki podczas nurkowania mogą zanurzyć się na głębokość do <b>6 metrów</b>.</li>
+            </ol>
+
+            <div class="section__gallery js-duckGallery">
+                <img class="section__image" width="1000" height="800" src="https://images.pexels.com/photos/112548/duck-wild-mallard-animals-112548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Kaczki">
+            </div>
+
+            <button class="section__button js-removeDuckGalleryButton">Usuń zdjęcie kaczki</button>
+
+        </section>
+
+        <section class="section" id="Kapibary">
+
+            <h3 class="section__header">Kapibary</h3>
+
+            <p class="section__paragraph">O kapibarach wystarczy tylko powiedzieć że są przyjaciółmi wszystkich zwierząt i nie ma takiego gatunku, który by się nie dogadał z kapibarą!</p>
+
+            <div class="section__gallery js-capybaraGallery">
+                <img class="section__image" width="1000" height="700" src="https://images.pexels.com/photos/19289099/pexels-photo-19289099/free-photo-of-close-up-of-capybaras-lying-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cztery kapibary opalające się obok wody">
+            </div>
+
+            <button class="section__button js-removeCapybaraGalleryButton">Usuń zdjęcie kapibary</button>
+
+        </section>
+
+        <section class="section">
+            <p class="section__paragraph section__paragraph--editable" contenteditable="">Jeśli chcesz się pobawić, zapraszam do edytowania tego tekstu. Pamiętaj że po odświeżeniu strony, zmiana tego tekstu nie zostanie zapisana.</p>
+        </section>
+
+        <section class="section js-removeAllMedia">
+            <div class="section__container">
+                <p class="section__paragraph section__paragraph--media"><strong>UWAGA</strong> - po kliknięciu guzika poniżej wszystkie zdjęcia, filmik i guziki będą usunięte!</p>
+                <button class="section__button js-removeAllMediaButton">Usuń wszystkie zdjęcia, filmik i guziki</button>
+            </div>
+        </section>
+
+        <section class="section" id="Tabela">
+            <div class="tableContainer js-tableContainer">
+                <table class="table">
+                    <caption class="table__caption">Podstawowe informacje o zwierzętach</caption>
+                    <tr>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Zwierzę</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Liczba gatunków</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Długość (cm)</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Waga (kg)</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Długość życia (lat)</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Ulubione jedzenie</th>
+                    </tr>
+                    <tr>
+                        <th class="table__tableCell table__tableCell--header" scope="row">Koty (domowe)</th>
+                        <td class="table__tableCell">73</td>
+                        <td class="table__tableCell">23 - 25</td>
+                        <td class="table__tableCell">4 - 5</td>
+                        <td class="table__tableCell">13 - 20</td>
+                        <td class="table__tableCell">Ryba</td>
+                    </tr>
+                    <tr>
+                        <th class="table__tableCell table__tableCell--header" scope="row">Psy</th>
+                        <td class="table__tableCell">360</td>
+                        <td class="table__tableCell">15 - 110</td>
+                        <td class="table__tableCell">1.4 - 110</td>
+                        <td class="table__tableCell">10 - 13</td>
+                        <td class="table__tableCell">Mięso</td>
+                    </tr>
+                    <tr>
+                        <th class="table__tableCell table__tableCell--header" scope="row" colspan="2">Kaczki (Mallard)</th>
+                        <td class="table__tableCell">61</td>
+                        <td class="table__tableCell">0.72 - 1.6</td>
+                        <td class="table__tableCell">5 - 10</td>
+                        <td class="table__tableCell">Insekty wodne</td>
+                    </tr>
+                    <tr>
+                        <th class="table__tableCell table__tableCell--header" scope="row">Kapibary</th>
+                        <td class="table__tableCell">2</td>
+                        <td class="table__tableCell">106 - 134</td>
+                        <td class="table__tableCell">35 - 66</td>
+                        <td class="table__tableCell">10 (na wołności)12 (udomowione)</td>
+                        <td class="table__tableCell">Owoce (arbuz)</td>
+                    </tr>
+                </table>
+            </div>
+            <button class="section__button js-tableToggleButton">Ukryj tabele</button>
+        </section>
+
+        <section class="section">
+            <div class="section__container">
+                <p class="section__paragraph">Jeśli chcesz odświeżyć stronę kliknij "Odśwież" - <em>wszystkie guziki, zdjęcia i filmik znowu będą widoczne</em>.</p>
+                <button class="section__button js-refreshPageButton">Odśwież</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Jeśli chesz przeczytać więcej o każdym ze zwierząt, możesz to zrobić na Wikipedii naciskając zodpowiedne linki poniżej. Po kliknięciu na link, strona Wikipedii zostanie otwarta w nowej zakładce.</p>
+        <div class="footer__linkContainer">
+            <a class="footer__link" target="_blank" href="https://pl.wikipedia.org/wiki/Kot_domowy">Więcej o kotach</a>
+        </div>
+        <div class="footer__linkContainer">
+            <a class="footer__link" target="_blank" href="https://pl.wikipedia.org/wiki/Pies_domowy">Więcej o psach</a>
+        </div>
+        <div class="footer__linkContainer">
+            <a class="footer__link" target="_blank" href="https://pl.wikipedia.org/wiki/Krzy%C5%BC%C3%B3wka_(zwyczajna)">Więcej o kaczkach krzyżówkach</a>
+        </div>
+        <div class="footer__linkContainer">
+            <a class="footer__link" target="_blank" href="https://pl.wikipedia.org/wiki/Kapibara_wielka">Więcej o kapibarach</a>
+        </div>
+        <div class="footer__linkContainer">
+            <a class="footer__link" href="#top">Wróć na początek strony</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

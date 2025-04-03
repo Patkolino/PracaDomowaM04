@@ -1,0 +1,29 @@
+.navigation__list {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    background-color: rgb(98, 201, 219);
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__item {
+    float: left;
+}
+
+.navigation__link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation__link:hover {
+    background-color: rgb(6, 164, 193);
+}
+
+.navigation__link:active {
+    background-color: rgb(250, 120, 120);
+    color: white;
+}

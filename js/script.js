@@ -1,4 +1,8 @@
-console.log("Pozdrawiam wszystkich! Mam nadzieję, że moja praca Wam się spodoba!");
+function welcome() {
+    console.log("Pozdrawiam wszystkich! Mam nadzieję, że moja praca Wam się spodoba!");
+}
+
+welcome();
 
 let tableContainer = document.querySelector(".js-tableContainer");
 
@@ -68,7 +72,7 @@ refreshPage.addEventListener("click", () => {
     location.reload(true);
 });
 
-tableToggleButton.addEventListener("click", () => {
+let showHideTable = () => {
     if (tableContainer.style.display === "none") {
         tableContainer.style.display = "block";
         tableToggleButton.innerText = "Ukryj tabele";
@@ -76,4 +80,6 @@ tableToggleButton.addEventListener("click", () => {
         tableContainer.style.display = "none";
         tableToggleButton.innerText = "Pokaż tabele";
     }
-});  
+};  
+
+tableToggleButton.addEventListener("click", showHideTable);

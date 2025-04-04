@@ -19,10 +19,10 @@
     background-color: rgb(223, 223, 174);
 }
 
-.table__tableCell--Header {
+.table__tableCell--header {
     background-color: rgb(164, 164, 251);
 }
 
-.table__tableCell--Header:hover {
+.table__tableCell--header:hover {
     background-color: rgb(213, 213, 253);
 }

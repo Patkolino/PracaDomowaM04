@@ -1,85 +1,98 @@
-function welcome() {
-    console.log("Pozdrawiam wszystkich! Mam nadzieję, że moja praca Wam się spodoba!");
-}
+{
+    const welcome = () => {
+        console.log("Pozdrawiam wszystkich! Mam nadzieję, że moja praca Wam się spodoba!");
+    };
 
-welcome();
+    const catGallery = document.querySelector(".js-catGallery");
+    const removeCatGalleryButton = document.querySelector(".js-removeCatGalleryButton");
 
-let tableContainer = document.querySelector(".js-tableContainer");
+    const onRemoveCatGalleryClick = () => {
+        catGallery.remove();
+        removeCatGalleryButton.remove();
+    };
 
-let tableToggleButton = document.querySelector(".js-tableToggleButton");
+    const dogGallery = document.querySelector(".js-dogGallery");
+    const removeDogGalleryButton = document.querySelector(".js-removeDogGalleryButton");
 
-let catGallery = document.querySelector(".js-catGallery");
-let removeCatGalleryButton = document.querySelector(".js-removeCatGalleryButton");
+    const onRemoveDogGalleryClick = () => {
+        dogGallery.remove();
+        removeDogGalleryButton.remove();
+    };
 
-let dogGallery = document.querySelector(".js-dogGallery");
-let removeDogGalleryButton = document.querySelector(".js-removeDogGalleryButton");
+    const removeCorgiGalleryButton = document.querySelector(".js-removeCorgiGalleryButton");
+    const corgiGallery = document.querySelector(".js-corgiGallery");
 
-let corgiGallery = document.querySelector(".js-corgiGallery");
-let removeCorgiGalleryButton = document.querySelector(".js-removeCorgiGalleryButton");
+    const onRemoveCorgiGalleryClick = () => {
+        corgiGallery.remove();
+        removeCorgiGalleryButton.remove();
+    };
 
-let duckGallery = document.querySelector(".js-duckGallery");
-let removeDuckGalleryButton = document.querySelector(".js-removeDuckGalleryButton");
+    const duckGallery = document.querySelector(".js-duckGallery");
+    const removeDuckGalleryButton = document.querySelector(".js-removeDuckGalleryButton");
 
-let capybaraGallery = document.querySelector(".js-capybaraGallery");
-let removeCapybaraGalleryButton = document.querySelector(".js-removeCapybaraGalleryButton");
+    const onRemoveDuckGalleryClick = () => {
+        duckGallery.remove();
+        removeDuckGalleryButton.remove();
+    };
 
-let removeAllMedia = document.querySelector(".js-removeAllMedia");
-let removeAllMediaButton = document.querySelector(".js-removeAllMediaButton");
+    const removeCapybaraGalleryButton = document.querySelector(".js-removeCapybaraGalleryButton");
+    const capybaraGallery = document.querySelector(".js-capybaraGallery");
 
-let refreshPage = document.querySelector(".js-refreshPageButton");
+    const onRemoveCapybaraGalleryClick = () => {
+        capybaraGallery.remove();
+        removeCapybaraGalleryButton.remove();
+    };
 
-removeCatGalleryButton.addEventListener("click", () => {
-    catGallery.remove();
-    removeCatGalleryButton.remove();
-});
+    const tableContainer = document.querySelector(".js-tableContainer");
+    const tableState = document.querySelector(".js-tableStateToggle");
+    const tableToggleButton = document.querySelector(".js-tableToggleButton");
 
-removeDogGalleryButton.addEventListener("click", () => {
-    dogGallery.remove();
-    removeDogGalleryButton.remove();
-});
-
-removeCorgiGalleryButton.addEventListener("click", () => {
-    corgiGallery.remove();
-    removeCorgiGalleryButton.remove();
-});
-
-removeDuckGalleryButton.addEventListener("click", () => {
-    duckGallery.remove();
-    removeDuckGalleryButton.remove();
-});
-
-removeCapybaraGalleryButton.addEventListener("click", () => {
-    capybaraGallery.remove();
-    removeCapybaraGalleryButton.remove();
-});
-
-removeAllMediaButton.addEventListener("click", () => {
-    catGallery.remove();
-    dogGallery.remove();
-    corgiGallery.remove();
-    duckGallery.remove();
-    capybaraGallery.remove();
-    removeCatGalleryButton.remove();
-    removeDogGalleryButton.remove();
-    removeCorgiGalleryButton.remove();
-    removeDuckGalleryButton.remove();
-    removeCapybaraGalleryButton.remove();
-    removeAllMedia.remove();
-    removeAllMediaButton.remove();
-});
-
-refreshPage.addEventListener("click", () => {
-    location.reload(true);
-});
-
-let showHideTable = () => {
-    if (tableContainer.style.display === "none") {
+    const tableShow = () => {
         tableContainer.style.display = "block";
-        tableToggleButton.innerText = "Ukryj tabele";
-    } else {
-        tableContainer.style.display = "none";
-        tableToggleButton.innerText = "Pokaż tabele";
-    }
-};  
+        tableState.innerText = "Ukryj ";
+    };
 
-tableToggleButton.addEventListener("click", showHideTable);
+    const tableHide = () => {
+        tableContainer.style.display = "none";
+        tableState.innerText = "Pokaż ";
+    };
+
+    const tableToggle = () => {
+        tableContainer.style.display === "none" ? tableShow() : tableHide();
+    };
+
+    const refreshPageButton = document.querySelector(".js-refreshPageButton");
+
+    const onRefreshPageClick = () => {
+        location.reload(true);
+    };
+
+    const removeAllMediaButton = document.querySelector(".js-removeAllMediaButton");
+    const removeAllMedia = document.querySelector(".js-removeAllMedia");
+
+    const onRemoveAllMediaClick = () => {
+        removeAllMedia.remove();
+        removeAllMediaButton.remove();
+        onRemoveCatGalleryClick();
+        onRemoveDogGalleryClick();
+        onRemoveCorgiGalleryClick();
+        onRemoveDuckGalleryClick();
+        onRemoveCapybaraGalleryClick();
+    };
+
+    const init = () => {
+        removeCatGalleryButton.addEventListener("click", onRemoveCatGalleryClick,);
+        removeDogGalleryButton.addEventListener("click", onRemoveDogGalleryClick);
+        removeCorgiGalleryButton.addEventListener("click", onRemoveCorgiGalleryClick);
+        removeDuckGalleryButton.addEventListener("click", onRemoveDuckGalleryClick);
+        removeCapybaraGalleryButton.addEventListener("click", onRemoveCapybaraGalleryClick);
+        tableToggleButton.addEventListener("click", tableToggle);
+        refreshPageButton.addEventListener("click", onRefreshPageClick);
+        removeAllMediaButton.addEventListener("click", onRemoveAllMediaClick);
+
+        welcome();
+    };
+
+    init();
+
+}

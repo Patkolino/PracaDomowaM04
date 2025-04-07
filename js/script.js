@@ -61,8 +61,6 @@
         tableContainer.style.display === "none" ? tableShow() : tableHide();
     };
 
-    const refreshPageButton = document.querySelector(".js-refreshPageButton");
-
     const onRefreshPageClick = () => {
         location.reload(true);
     };
@@ -81,6 +79,7 @@
     };
 
     const init = () => {
+        const refreshPageButton = document.querySelector(".js-refreshPageButton");
         removeCatGalleryButton.addEventListener("click", onRemoveCatGalleryClick,);
         removeDogGalleryButton.addEventListener("click", onRemoveDogGalleryClick);
         removeCorgiGalleryButton.addEventListener("click", onRemoveCorgiGalleryClick);

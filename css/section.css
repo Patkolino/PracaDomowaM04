@@ -39,6 +39,20 @@
 
 .section__button {
     font-family: inherit;
+    border-radius: 20px;
+    background-color: rgba(93, 225, 248, 0.458);
+}
+
+.section__button:hover {
+    background-color: #FF9999;
+}
+
+.section__button--refresh {
+    background-color: rgb(12, 229, 34);
+}
+
+.section__button--refresh:hover {
+    background-color: rgb(32, 255, 55);
 }
 
 .section__paragraph--editable {

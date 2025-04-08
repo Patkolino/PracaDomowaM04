@@ -50,11 +50,13 @@
     const tableShow = () => {
         tableContainer.style.display = "block";
         tableState.innerText = "Ukryj ";
+        tableToggleButton.classList.remove("section__button--refresh");
     };
 
     const tableHide = () => {
         tableContainer.style.display = "none";
         tableState.innerText = "Pokaż ";
+        tableToggleButton.classList.add("section__button--refresh");
     };
 
     const tableToggle = () => {
